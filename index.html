@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confidentialité & CGU — HelmSync</title>
+    <title>Mentions Légales, Confidentialité & CGU — HelmSync</title>
     <style>
         :root {
             --bg-color: #0f0f11;
@@ -12,6 +12,7 @@
             --text-muted: #a0a0a5;
             --brand-orange: #ff6600;
             --border-color: #2a2a30;
+            --callout-bg: #1e1e24;
         }
 
         * {
@@ -55,6 +56,16 @@
             font-size: 0.9rem;
         }
 
+        .part-title {
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin: 2.5rem 0 1.5rem 0;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px dashed var(--border-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         section {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -64,12 +75,9 @@
         }
 
         h2 {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             color: var(--brand-orange);
             margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
         p, li {
@@ -120,11 +128,22 @@
             text-decoration: underline;
         }
 
+        .ios-callout {
+            margin-top: 15px;
+            padding: 1rem;
+            background-color: var(--callout-bg);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+        }
+
         footer {
             text-align: center;
-            margin-top: 3rem;
+            margin-top: 4rem;
             font-size: 0.85rem;
             color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
         }
 
         @media (max-width: 600px) {
@@ -139,83 +158,95 @@
 <div class="container">
     <header>
         <h1>Helm<span>Sync</span></h1>
-        <p class="update-date">Confidentialité & CGU — Dernière mise à jour : 29 juin 2026</p>
+        <p class="update-date">Mentions Légales, Politique de Confidentialité & CGU<br>Dernière mise à jour : 29 juin 2026</p>
     </header>
 
-    <section>
-        <h2>1. Philosophie générale : Par un motard, pour les motards</h2>
-        <p><strong>HelmSync</strong> n'est pas le produit d'une entreprise cherchant à monétiser vos informations, mais un projet de passion développé sur mon temps libre par un motard, pour la communauté motarde. </p>
-        <p>L'application a donc été naturellement conçue avec le principe de minimisation des données. Nous ne collectons, ne revendons et n'analysons aucune donnée personnelle identifiable. D'ailleurs, vous n'avez même pas besoin de créer de compte pour l'utiliser : on roule, point.</p>
-    </section>
+    <div class="part-title">Partie 1 : Politique de Confidentialité</div>
 
     <section>
-        <h2>2. Données stockées localement</h2>
-        <p>Les données suivantes sont enregistrées exclusivement sur la mémoire de votre téléphone et ne sont jamais transmises à nos serveurs :</p>
+        <h2>1. Philosophie générale et Base légale</h2>
+        <p>L’application <strong>HelmSync</strong> est un projet indépendant développé sur mon temps libre par un motard, pour la communauté. HelmSync ne crée aucun compte utilisateur, ne collecte pas de profil marketing et n’exploite pas vos données à des fins publicitaires ou de profilage. Nous ne revendons aucune information.</p>
+        <p>Le traitement des données techniques décrit ci-après repose sur deux bases légales distinctes conformément au RGPD :</p>
         <ul>
-            <li><strong>Votre pseudonyme de session</strong> (choisi par vos soins).</li>
-            <li><strong>Votre profil moto</strong> (marque et modèle renseignés).</li>
-            <li><strong>Vos préférences d'application</strong> (paramètres audio, thème).</li>
-        </ul>
-        <p>En temps normal, ces données sont définitivement supprimées de votre appareil si vous désinstallez l'application ou en effacez le cache.</p>
-        <p style="margin-top: 10px; padding-left: 10px; border-left: 3px solid var(--brand-orange); font-size: 0.9rem;">
-            <em>🍏 <strong>Note technique pour les utilisateurs iOS (Apple) :</strong></em> Si la sauvegarde iCloud est activée sur votre iPhone, ces quelques réglages locaux (NSUserDefaults) peuvent être inclus dans la sauvegarde automatique de votre appareil et persister en cas de restauration. Il s'agit d'une contrainte du système d'exploitation d'Apple sur laquelle le code de l'application n'a aucun contrôle. Ces données restent cependant sur votre compte Apple personnel et ne nous sont jamais accessibles.
-        </p>
-    </section>
-
-    <section>
-        <h2>3. Données de session en temps réel</h2>
-        <p>Lorsque vous rejoignez ou créez une "Room" active, des données éphémères transitent par notre infrastructure pour le bon fonctionnement du service :</p>
-        <ul>
-            <li><strong>Position GPS :</strong> Partagée strictement en temps réel avec les autres membres de votre groupe actif afin de vous afficher sur la carte. L'historique de vos déplacements n'est ni enregistré, ni persisté sur nos serveurs. Le partage cesse instantanément dès que vous quittez la Room ou fermez l'application.</li>
-            <li><strong>Flux audio :</strong> Votre voix est routée via l'infrastructure <em>HelmSync</em> pour l'intercom. Le flux fait l'objet d'un transit direct (peer-to-peer / relay) pour la performance des rooms, il n'est pas enregistré, n'est pas transcrit et n'est pas stocké.</li>
-            <li><strong>Identifiant de session :</strong> Un UUID généré localement permet de lier votre position à votre audio dans la Room. Il est détruit à la fin de la session.</li>
+            <li><strong>L'exécution du service :</strong> Nécessaire pour établir l'intercom audio et l'affichage de la carte en temps réel à votre demande explicite lorsque vous rejoignez une session.</li>
+            <li><strong>L'intérêt légitime :</strong> Nécessaire pour assurer la stabilité de l'application, diagnostiquer les plantages techniques et maintenir la sécurité du service.</li>
         </ul>
     </section>
 
     <section>
-    <h2>4. Sous-traitants et solutions techniques</h2>
-    <p>Pour assurer la distribution, la latence et la stabilité du service, l'application s'appuie sur des infrastructures tierces spécialisées :</p>
-    <ul>
-        <li><strong>Transit audio :</strong> Un service réseau en temps réel (WebRTC). Le flux audio transite par leurs relais sans être ni enregistré, ni transcrit, ni stocké.</li>
-        <li><strong>Diagnostic de stabilité :</strong> Un outil technique de remontée de rapports d'erreurs automatisé. En cas de fermeture forcée de l'application, des données techniques strictement anonymes (modèle de l'appareil, version de l'OS, ligne de code ayant provoqué l'erreur) sont collectées pour nous permettre de corriger le dysfonctionnement.</li>
-    </ul>
-    </section>
-
-    <section>
-        <h2>5. Protection des mineurs</h2>
-        <p>HelmSync n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons sciemment aucune donnée concernant des mineurs. Si un parent constate qu'un mineur utilise le service, la simple suppression de l'application efface l'intégralité des empreintes locales.</p>
-    </section>
-
-    <section>
-        <h2>6. Autorisations requises (Permissions) et Sécurité</h2>
-        <p>Pour fonctionner, HelmSync a besoin d'accéder à certaines fonctionnalités de votre téléphone. L'application vous demandera explicitement l'autorisation pour :</p>
+        <h2>2. Transit et Traitement des Données en Temps Réel</h2>
+        <p>HelmSync est une application de communication instantanée. Certaines données techniques ou de session doivent transiter temporairement pour fournir le service, sans faire l'objet d'un stockage ou d'une conservation durable :</p>
         <ul>
-            <li><strong>Le Microphone :</strong> Strictement nécessaire pour capter votre voix et la transmettre au groupe (intercom). L'application n'écoute pas et n'enregistre rien en arrière-plan lorsque vous n'êtes pas connecté à une Room.</li>
-            <li><strong>La Localisation (GPS) :</strong> Nécessaire pour partager votre position sur la carte avec votre groupe.</li>
+            <li><strong>Flux audio (Voix) :</strong> Lorsque l'intercom est actif, votre flux vocal est capté par le microphone et routé en temps réel vers les autres motards de la Room. Ce flux transit de manière dynamique, sans avoir vocation à être enregistré, transcrit ou conservé durablement sur nos infrastructures au-delà des besoins techniques de transmission en temps réel.</li>
+            <li><strong>Position GPS (Géolocalisation) :</strong> Vos coordonnées géographiques sont transmises en temps réel aux seuls membres de votre groupe actif afin de vous afficher sur la carte de session. Aucun historique de vos trajets n'est conservé de manière permanente. Le traitement de cette donnée s'arrête dès que vous quittez la Room ou fermez l'application.</li>
+            <li><strong>Données techniques de connexion :</strong> L'établissement des sessions de communication (WebRTC) implique le traitement temporaire de métadonnées réseau (telles que l'adresse IP nécessaire au routage). Ces métadonnées de session ne sont pas conservées durablement au-delà des besoins techniques de la session et du bon fonctionnement du service.</li>
         </ul>
-        <p><strong>Sécurité :</strong> Les communications vocales transitant par notre infrastructure (WebRTC) bénéficient d'un chiffrement standard, empêchant toute interception en clair de vos conversations sur le réseau.</p>
     </section>
 
     <section>
-        <h2>7. Vos droits (RGPD)</h2>
-        <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression. Étant donné que nous ne possédons aucune base de données utilisateurs, le droit à l'oubli s'exerce de manière autonome par la désinstallation de l'application.</p>
-        <p>Pour toute question juridique ou technique concernant cette politique : <br>
-        <strong>Email de contact :</strong> <a href="mailto:n2o_30@hotmail.com">n2o_30@hotmail.com</a> </p>
-    </section>
-
-    <section>
-        <h2>Exclusion de garantie et Limitation de responsabilité (CGU)</h2>
-        <p>HelmSync est une application partagée à titre gratuit et développée sur mon temps libre par pure passion. Elle est fournie <strong>"en l'état" (As-Is)</strong>, sans aucune garantie de fonctionnement continu ou d'absence de bugs.</p>
+        <h2>3. Stockage Local sur l'Appareil</h2>
+        <p>Afin de vous éviter de reconfigurer l'application à chaque ouverture, les données suivantes sont inscrites localement sur votre propre téléphone (via <em>SharedPreferences</em> sous Android ou <em>NSUserDefaults</em> sous iOS) :</p>
         <ul>
-            <li><strong>Pas d'obligation de résultat :</strong> Étant le seul développeur sur ce projet (hobby), je fais de mon mieux pour répondre aux sollicitations, améliorer l'application et corriger les erreurs. Cependant, je n'ai aucune obligation de résultat, de maintenance corrective ou de support technique.</li>
-            <li><strong>Évolution et modifications :</strong> L'application est un projet vivant qui peut évoluer de manière totalement différente au fil du temps. Des fonctionnalités peuvent être ajoutées, modifiées, suspendues ou supprimées à tout moment sans préavis.</li>
-            <li><strong>Sécurité routière :</strong> HelmSync est un outil d'aide à la communication et à la navigation. En aucun cas l'utilisation de l'application (écoute de l'audio, regard sur la carte) ne doit altérer votre concentration sur la route. Vous restez le seul et unique responsable de votre conduite, de votre sécurité et de celle des autres. Je décline toute responsabilité en cas d'accident ou de dommages survenus lors de l'utilisation de l'application.</li>
+            <li>Le pseudonyme éphémère de votre choix.</li>
+            <li>Le profil de votre moto (marque, modèle).</li>
+            <li>Vos préférences d'interface et de réglages audio.</li>
         </ul>
+        <p>Ces données restent cloisonnées dans votre appareil. Elles sont supprimées si vous videz le cache ou désinstallez l'application.</p>
+        <div class="ios-callout">
+            <em>🍏 <strong>Note technique iOS (Apple) :</strong></em> Si la fonctionnalité de sauvegarde iCloud (iCloud Backup) est activée sur votre iPhone, le système d'exploitation d'Apple est susceptible d'inclure ces fichiers de configuration locaux dans votre copie de sauvegarde personnelle. Ce comportement relève de la gestion système exclusive d'Apple, sur laquelle le code de l'application n'a aucune prise technique.
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Hébergement et Tierces Parties</h2>
+        <p>Pour assurer la viabilité technique, la distribution et la sécurité du service, HelmSync s'appuie sur les solutions techniques et prestataires suivants :</p>
+        <ul>
+            <li><strong>Hébergement du site et mentions légales :</strong> Le site vitrine et le présent document sont hébergés via la solution publique <strong>GitHub Pages</strong> (GitHub Inc.).</li>
+            
+            <li><strong>Transit audio (Technologie & Infrastructure) :</strong> La gestion technique des flux audio à basse latence utilise la technologie open-source <strong>LiveKit</strong>, déployée sur notre propre infrastructure d'hébergement tierce (fournie par notre hébergeur de serveurs VPS).</li>
+            
+            <li><strong>Transit audio (Prestataire) :</strong> La gestion technique des flux audio à basse latence est confiée à la plateforme <strong>LiveKit Cloud</strong>, agissant comme simple transitaire de flux éphémères.</li>
+            <li><strong>Diagnostic de stabilité :</strong> L'outil technique <strong>Google Firebase Crashlytics</strong> (Google LLC) est intégré pour collecter des données techniques de diagnostic en cas de fermeture inopinée de l'application (état de la mémoire au moment du crash, modèle de l'appareil, version de l'OS). Ces rapports exclusifs au débogage ne sont pas utilisés à des fins publicitaires ou de profilage.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Sécurité et Chiffrement</h2>
+        <p>Bien qu'aucun système en ligne ne puisse garantir une sécurité absolue, HelmSync applique les standards de l'état de l'art pour protéger les données en transit :</p>
+        <p>Les protocoles de communication utilisés pour l'intercom (WebRTC) intègrent nativement des mécanismes de chiffrement des flux (DTLS / SRTP). Cela garantit que la voix et les positions transmises en temps réel ne circulent pas en clair sur le réseau internet grand public et sont protégées contre les interceptions tierces.</p>
+    </section>
+
+    <section>
+        <h2>6. Protection des Mineurs</h2>
+        <p>HelmSync ne s'adresse pas aux enfants de moins de 13 ans. Nous ne traitons pas sciemment d'informations relatives à des mineurs. Si un usage par un mineur est constaté, la simple désinstallation de l'application supprime l'intégralité des configurations locales.</p>
+    </section>
+
+    <section>
+        <h2>7. Vos Droits et Contact (RGPD)</h2>
+        <p>Conformément au RGPD et aux réglementations locales, vous disposez d'un droit d'accès, de rectification et de suppression des données techniques éphémères qui vous concernent. Compte tenu du fait que HelmSync ne dispose d'aucune base de données utilisateurs centralisée ni d'identifiants persistants, vos droits s'exercent principalement de manière autonome en modifiant vos réglages ou en désinstallez l'application.</p>
+        <p>Pour toute demande d'information ou question technique concernant vos données, vous pouvez me contacter à l'adresse suivante : <a href="mailto:n2o_30@hotmail.com">contact@helmsync.app</a></p>
+    </section>
+
+    <div class="part-title">Partie 2 : Conditions Générales d'Utilisation (CGU)</div>
+
+    <section>
+        <h2>8. Exclusion de Garantie et Limitation de Responsabilité</h2>
+        <p>HelmSync est fournie à titre gracieux <strong>"en l'état" (As-Is)</strong>, sans aucune garantie expresse ou implicite de disponibilité, de continuité de service ou d'absence d'erreurs logicielles.</p>
+        <ul>
+            <li><strong>Nature du Projet :</strong> S'agissant d'un projet de hobby mené individuellement, le développeur met en œuvre ses meilleurs efforts pour corriger les dysfonctionnements constatés au travers des mises à jour, mais n'est soumis à aucune obligation de résultat, de support technique dédié, ni de calendrier de maintenance corrective.</li>
+            <li><strong>Évolutivité du service :</strong> L'application est un outil vivant. Son architecture, ses fonctionnalités ainsi que ses modalités de routage peuvent être modifiées, suspendues, restreintes ou supprimées à tout moment, sans préavis ni compensation.</li>
+            <li><strong>Sécurité Routière (Clause Impérative) :</strong> L'utilisation d'une application mobile à moto comporte des risques inhérents à la distraction. HelmSync est un simple outil de confort pour la liaison entre motards. En aucun cas l'interaction avec l'application (écoute des communications, consultation occasionnelle de la carte) ne doit se substituer à la vigilance requise pour la conduite d'un deux-roues. L'utilisateur demeure le seul et unique responsable de la maîtrise de son véhicule, du respect du Code de la Route et de la sécurité générale. Le développeur décline toute responsabilité en cas de dommages matériels, corporels, d'accidents ou de contraventions survenus en marge de l'utilisation de HelmSync.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>9. Modifications des présentes clauses</h2>
+        <p>Ces mentions, règles de confidentialité et conditions d'utilisation peuvent être adaptées à mesure que le projet évolue. La date de mise à jour figurant en tête de document fait foi. Le fait de continuer à lancer et utiliser l'application après modification vaut acceptation implicite des conditions révisées.</p>
     </section>
 
     <footer>
-        <p>🏍️ <strong>HelmSync</strong> — Fait avec passion pour les motards.</p>
-        <p style="margin-top: 5px;">Roulez prudemment. V ✌️</p>
+        <p>🏍️ <strong>HelmSync</strong> — Développé par un motard avec passion pour la communauté motarde.</p>
+        <p style="margin-top: 5px;">Soyez prudents sur la route. V ✌️</p>
     </footer>
 </div>
 
