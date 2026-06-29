@@ -1,0 +1,56 @@
+Fiche Store
+
+Nom
+HelmSync
+
+Description courte
+Intercom vocal full duplex pour motards, en ligne et hors ligne.
+
+Description longue
+HelmSync est une application d’intercom vocal full duplex conçue pour les groupes de motards. Elle répond à un problème très concret : lors des balades, connecter plusieurs intercoms entre eux est souvent long, fastidieux et parfois incompatible, même lorsque les appareils annoncent un mode “universel”.
+Comme la plupart des motards disposent déjà d’un casque avec intercom Bluetooth et d’un téléphone connecté, HelmSync propose une approche plus simple pour communiquer en groupe pendant le trajet. L’application permet aux participants d’échanger en temps réel avec une interface claire, lisible et pensée pour un usage mobile sur route.
+L’application fonctionne selon la connectivité disponible. En mode en ligne, HelmSync utilise une infrastructure temps réel pour maintenir la communication entre les membres du groupe. En mode hors ligne, l’application peut utiliser un fonctionnement local adapté aux situations où le réseau mobile n’est pas disponible.
+HelmSync a été pensée pour un usage concret à moto : navigation rapide dans l’interface, lecture claire de l’état de connexion et expérience centrée sur la communication de groupe. L’objectif est de proposer un outil simple, stable et pratique, sans configuration complexe ni manipulation inutile avant de prendre la route.
+
+
+Contact support
+Nom développeur : HelmSync Studio
+Email support : n2o_30@hotmail.com
+Site web : https://nos30.github.io/helmsync-legal/
+
+
+Data safety
+
+Données collectées :
+Audio / voix (via microphone)
+Position / localisation
+
+Pourquoi ces données sont collectées :
+Fonctionnalité de l’application
+Communications
+Expérience de groupe / contexte de trajet
+
+Partage des données :
+Pas de partage pour publicité
+Pas de vente de données
+
+Sécurité :
+Les données sont transmises de manière sécurisée pendant l’utilisation du service
+Utilisateur peut désactiver certaines permissions, avec impact sur certaines fonctions
+
+
+Politique de confidentialité
+
+Politique de confidentialité de HelmSync
+
+HelmSync est une application d’intercom vocal pour groupes de motards. L’application utilise certaines autorisations du terminal, notamment le microphone et la localisation, afin de fournir ses fonctionnalités principales de communication et de fonctionnement en contexte de trajet.
+Les données utilisées par l’application servent exclusivement à assurer le fonctionnement du service, la communication entre participants et certaines fonctions liées à l’expérience de groupe. HelmSync n’utilise pas ces données à des fins publicitaires et ne vend pas les données personnelles des utilisateurs.
+Selon l’architecture technique utilisée, certaines données peuvent transiter via des services techniques nécessaires au fonctionnement temps réel de l’application. Ces traitements sont limités à l’exécution du service et à la stabilité technique de l’application.
+Certaines informations techniques peuvent également être traitées pour le diagnostic, la sécurité ou la résolution d’incidents. Les données ne sont conservées que pendant la durée nécessaire au fonctionnement du service ou au traitement technique légitime associé.
+L’utilisateur peut contrôler les autorisations accordées à HelmSync depuis les réglages de son appareil. Le refus de certaines autorisations peut limiter ou empêcher l’utilisation de certaines fonctionnalités principales de l’application.
+
+Résumé store
+HelmSync est un intercom vocal full duplex pour groupes de motards, conçu pour fonctionner en ligne ou hors ligne selon la connectivité disponible.
+
+Positionnement
+Communication simple, temps réel, pensée pour la route.
