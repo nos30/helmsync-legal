@@ -150,13 +150,16 @@
 
     <section>
         <h2>2. Données stockées localement</h2>
-        <p>Les données suivantes sont enregistrées exclusivement sur la mémoire de votre téléphone (via <em>SharedPreferences</em>) et ne sont jamais transmises à nos serveurs :</p>
+        <p>Les données suivantes sont enregistrées exclusivement sur la mémoire de votre téléphone et ne sont jamais transmises à nos serveurs :</p>
         <ul>
             <li><strong>Votre pseudonyme de session</strong> (choisi par vos soins).</li>
             <li><strong>Votre profil moto</strong> (marque et modèle renseignés).</li>
             <li><strong>Vos préférences d'application</strong> (paramètres audio, thème).</li>
         </ul>
-        <p>Ces données sont définitivement supprimées de votre appareil si vous désinstallez l'application ou effacez son cache.</p>
+        <p>En temps normal, ces données sont définitivement supprimées de votre appareil si vous désinstallez l'application ou en effacez le cache.</p>
+        <p style="margin-top: 10px; padding-left: 10px; border-left: 3px solid var(--brand-orange); font-size: 0.9rem;">
+            <em>🍏 <strong>Note technique pour les utilisateurs iOS (Apple) :</strong></em> Si la sauvegarde iCloud est activée sur votre iPhone, ces quelques réglages locaux (NSUserDefaults) peuvent être inclus dans la sauvegarde automatique de votre appareil et persister en cas de restauration. Il s'agit d'une contrainte du système d'exploitation d'Apple sur laquelle le code de l'application n'a aucun contrôle. Ces données restent cependant sur votre compte Apple personnel et ne nous sont jamais accessibles.
+        </p>
     </section>
 
     <section>
