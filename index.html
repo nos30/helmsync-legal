@@ -198,15 +198,12 @@
     </section>
 
     <section>
-        <h2>4. Hébergement et Tierces Parties</h2>
-        <p>Pour assurer la viabilité technique, la distribution et la sécurité du service, HelmSync s'appuie sur les solutions techniques et prestataires suivants :</p>
+        <h2>4. Hébergement et Sous-traitants (Tiers)</h2>
+        <p>Pour assurer la viabilité technique, la distribution et la sécurité du service, HelmSync s'appuie sur les infrastructures tierces suivantes :</p>
         <ul>
-            <li><strong>Hébergement du site et mentions légales :</strong> Le site vitrine et le présent document sont hébergés via la solution publique <strong>GitHub Pages</strong> (GitHub Inc.).</li>
-            
-            <li><strong>Transit audio (Technologie & Infrastructure) :</strong> La gestion technique des flux audio à basse latence utilise la technologie open-source <strong>LiveKit</strong>, déployée sur notre propre infrastructure d'hébergement tierce (fournie par notre hébergeur de serveurs VPS).</li>
-            
-            <li><strong>Transit audio (Prestataire) :</strong> La gestion technique des flux audio à basse latence est confiée à la plateforme <strong>LiveKit Cloud</strong>, agissant comme simple transitaire de flux éphémères.</li>
-            <li><strong>Diagnostic de stabilité :</strong> L'outil technique <strong>Google Firebase Crashlytics</strong> (Google LLC) est intégré pour collecter des données techniques de diagnostic en cas de fermeture inopinée de l'application (état de la mémoire au moment du crash, modèle de l'appareil, version de l'OS). Ces rapports exclusifs au débogage ne sont pas utilisés à des fins publicitaires ou de profilage.</li>
+            <li><strong>Site vitrine et documents légaux :</strong> Hébergés via la solution publique <strong>GitHub Pages</strong> (GitHub Inc.).</li>
+            <li><strong>Infrastructure temps réel (Intercom) :</strong> Repose sur la technologie open-source <strong>LiveKit</strong>, déployée et administrée par nos soins sur notre propre serveur privé hébergé chez <strong>OVH</strong> . Les flux audio et les coordonnées GPS y transitent de manière strictement éphémère (via les conteneurs isolés <em>helmsync-livekit</em> et <em>helmsync-token-server</em>) sans persistance en base de données.</li>
+            <li><strong>Diagnostic de stabilité :</strong> L'outil technique <strong>Google Firebase Crashlytics</strong> (Google LLC) est intégré pour collecter des métadonnées strictement techniques en cas de fermeture inopinée de l'application (état de la mémoire au moment du crash, modèle de l'appareil, version OS). Ces rapports exclusifs au débogage ne sont pas utilisés à des fins publicitaires.</li>
         </ul>
     </section>
 
